@@ -1,5 +1,10 @@
 .header{
     font-family: monospace;
+    border: 1px solid;
+    background-color: #efefef;
+    border-collapse: collapse;
+    width: 100%;
+    text-align:left;
 }
 .pic{
     float: left;
@@ -9,14 +14,21 @@
     border: 1px solid;
     background-color: #efefef;
     border-collapse: collapse;
-}
-
-.table{
     display: grid;
     margin-bottom: 15px;
 }
 
-.button{
+
+.button1{
     border: 1px solid;
     background-color:lightgreen;
+}
+
+.button2{
+    border: 1px solid;
+    background-color:red;
+}
+
+.outputTable{
+    background-color: #efefef;
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лаба 1 Веб Прога</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="script" href="Script.php">
+</head>
+
+<body>
+<h1 class="header">
+    Савельев Олег Максимович<br>
+    Группа: P3233<br>
+    Вариант: 33015<br>
+</h1>
+
+<img src="График.png" class="pic" alt="График">
+
+<p>Введите координаты точки и радиус:</p>
+
+<form action="Script.php" method="get">
+    <div class="table">
+        <table id="inputTable">
+            <tr>
+                <th>X (-3 ... 5):</th>
+                <th>
+                    <label>
+                        <input required="required" name="X">
+                    </label>
+                </th>
+            </tr>
+
+            <tr>
+                <th>Y:</th>
+                <th>
+                    <label>
+                        <select name="Y">
+                            <option value="-3">-3</option>
+                            <option value="-2">-2</option>
+                            <option value="-1">-1</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </label>
+                </th>
+            </tr>
+
+            <tr>
+                <th>R:</th>
+                <th>
+                    <label>
+                        <select name="R">
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                        </select>
+                    </label>
+                </th>
+            </tr>
+
+            <tr>
+                <th></th>
+                <th>
+                    <input name="Ввод" type="submit" value="Ввод" class="button">
+                </th>
+            </tr>
+        </table>
+    </div>
+</form>
+
+<div class="result">
+    <p>Итог:</p>
+</div>
+
+<div class="table">
+    <table class="secondTable" id="outputTable">
+        <tbody id="tbody">
+        <tr>
+            <th>X</th>
+            <th>Y</th>
+            <th>R</th>
+            <th>Результат</th>
+            <th>Выполнение</th>
+            <th>Время</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript" src="Checking.js"></script>
+</body>
+</html>

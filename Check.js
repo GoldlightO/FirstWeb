@@ -87,3 +87,15 @@ $(document).ready(function () {
         });
     })
 })
+
+$(document).ready(function () {
+    $.ajax({
+        url: "restore.php",
+        async: true,
+        type: "GET",
+        success: function (response){
+            let table = document.getElementById("tbody");
+            table.insertAdjacentHTML('beforeend', response);
+        }
+    })
+})

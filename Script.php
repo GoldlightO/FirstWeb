@@ -2,9 +2,9 @@
 session_start();
 $start = microtime(true);
 $validX = array(-5, -4, -3, -2, -1, 0, 1, 2, 3);
-$r = floatval(htmlspecialchars($_GET["r"]));
 $x = floatval(htmlspecialchars($_GET["x"]));
 $y = floatval(htmlspecialchars($_GET["y"]));
+$r = floatval(htmlspecialchars($_GET["r"]));
 date_default_timezone_set("Europe/Moscow");
 $current_time = date("H:i:s");
 $message = "";

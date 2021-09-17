@@ -18,6 +18,9 @@ $(document).ready(function() {
             }else if(!x.value){
                 alert("X не введён!");
                 isOK = false;
+            }else if(isNaN(x.value)){
+                alert("X введён не верно!");
+                isOK = false;
             }
             return isOK;
         }

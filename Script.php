@@ -8,8 +8,8 @@ $r = floatval(htmlspecialchars($_GET["r"]));
 date_default_timezone_set("Europe/Moscow");
 $current_time = date("H:i:s");
 $message = "";
-$false = "Не принаждежит";
-$true = "Принаждежит";
+$false = "Не принадлежит";
+$true = "Принадлежит";
 $class = "No";
 
 if ($x > $r || $x < -$r / 2 || $y > $r / 2 || $y < -$r)

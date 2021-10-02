@@ -12,6 +12,21 @@ $false = "Не принадлежит";
 $true = "Принадлежит";
 $class = "No";
 
+$int_value = is_numeric($x) ? floatval($x) : null;
+if ($int_value === null)
+{
+}
+
+if (!is_null($x)) {
+    if ($x == 0) {
+        $message = "Insert Data";
+    } else {
+        if (!in_array($x, $validX)) {
+            $message = "Invalid X";
+        }
+    }
+}
+
 if ($x > $r || $x < -$r / 2 || $y > $r / 2 || $y < -$r)
     $message = $false;
 else if ($x < 0 && $y > 0)

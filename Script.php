@@ -1,4 +1,7 @@
 <?php
+ini_set ('display_errors',1);
+error_reporting (E_ALL ^E_NOTICE);
+
 session_start();
 $start = microtime(true);
 $validX = array(-5, -4, -3, -2, -1, 0, 1, 2, 3);
@@ -12,19 +15,13 @@ $false = "Не принадлежит";
 $true = "Принадлежит";
 $class = "No";
 
-$int_value = is_numeric($x) ? floatval($x) : null;
-if ($int_value === null)
-{
-}
 
 if (!is_null($x)) {
-    if ($x == 0) {
-        $message = "Insert Data";
-    } else {
-        if (!in_array($x, $validX)) {
-            $message = "Invalid X";
-        }
+    if (!in_array($x, $validX)) {
+        $message = "X выходит за пределы!";
     }
+} else {
+    $message = "X не введён или введён неверно!";
 }
 
 if ($x > $r || $x < -$r / 2 || $y > $r / 2 || $y < -$r)
